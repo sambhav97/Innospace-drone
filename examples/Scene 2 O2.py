@@ -5,7 +5,7 @@ tello.connect()
 tello.takeoff()
 
 tello.move_up(60)
-tello.move_forward(170)
+tello.move_forward(200)
 tello.move_down(30)
 tello.rotate_counter_clockwise(360)
 
