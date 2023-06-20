@@ -1033,9 +1033,6 @@ class BackgroundFrameRead:
         self.address = address
         self.frame = np.zeros([300, 400, 3], dtype=np.uint8)
 
-        # Try grabbing frame with PyAV
-        # According to issue #90 the decoder might need some time
-        # https://github.com/damiafuentes/DJITelloPy/issues/90#issuecomment-855458905
         try:
             Tello.LOGGER.debug('trying to grab video frames...')
             self.container = av.open(self.address, timeout=(Tello.FRAME_GRAB_TIMEOUT, None))

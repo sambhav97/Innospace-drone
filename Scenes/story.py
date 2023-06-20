@@ -1,6 +1,6 @@
 import time
 from djitellopy import Tello
-#
+
 tello1 = Tello()
 # tello1.connect()
 
